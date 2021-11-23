@@ -1,0 +1,128 @@
+.container_create {
+  width: 60%;
+  margin: auto;
+}
+
+.signInContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.login_card {
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 50%;
+  margin: auto;
+}
+
+.login_card > h1 {
+  text-align:center;
+}
+.login_card > p  {
+  text-align:center;
+}
+
+.login_card .form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.login_card .form_group label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* .login_card .form_group label,  .login_card .form_group textarea{
+  margin: 2px 0px;
+
+} */
+
+ .login_card .form_group textarea {
+  border-radius: 4px;
+  background-color: #F5F5F8;
+  border: none;
+  /* border: 1px solid black; */
+}
+
+.login_card .form_group textarea, .login_card .form_group button, .login_card .group_button button {
+  padding:15px 15px ;
+}
+.login_card .form_group button {
+  background: #b01fec;
+  border: none;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing:0.2ch;
+  border-radius: 4px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.login_card .form_group button:hover {
+  background-color: #9c2bcc;
+}
+
+.login_card .group_button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login_card .group_button button {
+  margin-bottom: 25px;
+  border: none;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing:0.2ch;
+}
+
+.login_card .group_button button:nth-child(1):hover {
+  background: #4ed8b1;
+}
+
+.login_card .group_button button:nth-child(2):hover {
+  background: #6B7280;
+}
+
+
+.login_card .group_button button:nth-child(2) {
+  background: #9CA3AF;
+}
+
+.login_card .group_button button:nth-child(1) {
+  background: #00C68F;
+}
+
+.login_card .footer{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media (max-width:840px) { 
+.login_card {
+    width: 100% !important;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .signInContainer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:1280px) { 
+  .login_card {
+    /* height: 30vh; */
+    width: 60% ;
+  }
+}

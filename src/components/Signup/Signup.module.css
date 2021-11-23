@@ -1,0 +1,107 @@
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Heebo', sans-serif;
+  min-height: 90vh;
+}
+
+.signup_card {
+  background-color: #ffff;
+  padding: 20px;
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.signup_card > h1 {
+  text-align:center;
+}
+.signup_card > p  {
+  text-align:center;
+}
+
+.signup_card .form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.signup_card .form_group label,  .signup_card .form_group input{
+  margin: 2px 0px;
+}
+
+ .signup_card .form_group input {
+  border-radius: 7px;
+  border:none;
+  border: 1px solid #373E68;
+}
+
+.signup_card .form_group input, .signup_card .form_group button {
+  padding:15px 15px ;
+}
+.signup_card .form_group button {
+  font-family: 'Heebo', sans-serif;
+  background: #4285F4;
+  border: none;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing:0.2ch;
+  background: #373E68;
+  border-radius:4px;
+}
+
+.signup_card .form_group button:hover {
+  background: #454e81;
+}
+
+.signup_card .group_button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup_card .group_button button {
+  background: #009F7F;
+  margin-bottom: 25px;
+  border: none;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing:0.2ch;
+}
+
+.signup_card .group_button button:nth-child(1):hover {
+  background: #00C68F;
+}
+
+.signup_card .group_button button:nth-child(2):hover {
+  background: #9CA3AF;
+}
+
+.signup_card .group_button button:nth-child(2) {
+  background: #6B7280;
+}
+
+.signup_card .footer{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media (max-width:840px) { 
+.signup_card {
+    width: 90% !important;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width:1280px) { 
+  .signup_card {
+    width: 40% ;
+  }
+}

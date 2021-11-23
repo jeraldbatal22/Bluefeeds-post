@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Heebo:wght@300&family=Shippori+Antique&display=swap');
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content:space-between;
+  /* background: #ffff; */
+  width: 60%;
+  margin: auto;
+  color: #4e5a97;
+  font-family: 'Heebo', sans-serif;
+  background-color: #373E68;
+}
+
+.navContainer {
+  background-color: #373E68;
+}
+
+.logo {
+  margin:10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.logo strong {
+  font-size: 35px;
+}
+
+.logo strong .blue {
+  color: #ffff;
+}
+
+.logo strong .feeds {
+  color: #1877F2;
+}
+
+.maxUl, .minUl {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #373E68;
+}
+
+.maxUl a, .minUl a  {
+  text-decoration: none;
+  color: black;
+}
+
+.maxUl li, .minUl li {
+  margin-right: 60px;
+  /* color: #4e5a97; */
+  color: #ffff;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* .maxUl li a, .minUl li a {
+  color: gray;
+}
+
+.maxUl li p:hover, .minUl li p:hover {
+  color: #00C58E !important;
+} */
+
+.minUl {
+  display: none;
+}
+
+.hamburger {
+  display: none ;
+}
+
+/* .maxUl li:hover, .maxUl li a:hover, .minUl li:hover, .minUl li a:hover {
+  color: #00C58E;
+  cursor: pointer;
+  font-weight: 400;
+} */
+
+.maxUl .join {
+  cursor: pointer;
+  padding: 10px 13px;
+  border-radius: 4px;
+  border: none;
+  background: #1877F2;
+  color: #ffff;
+}
+
+.maxUl .join:hover {
+  color: #ffff;
+  background: #1D60F6;
+}
+
+@media (max-width:768px) { 
+
+  .header {
+    width: 100%;
+  }
+  
+  .maxUl li, .cart_count {
+    display: none !important;
+  }
+  .show {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .minUl {
+    position: absolute;
+    margin-top: 82px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: #ffff; */
+    margin-left: -20px;
+  }
+
+  .minUl li {
+    margin: 25px;
+  }
+
+  .menuIcon {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menuIcon p {
+    color: #ffff;
+    font-weight: 700;
+    padding: 5px 12px;
+    background:#1877F2 ;
+    border-radius: 100%;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}

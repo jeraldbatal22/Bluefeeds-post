@@ -16,6 +16,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route exact path="/" element={<Signin />} />
+      </Routes>
+      <Routes>
         <Route path="/feeds" element={<PostsList />} />
       </Routes>
       <Routes>
